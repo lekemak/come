@@ -1,0 +1,302 @@
+*{
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+}
+body{
+    max-width: 1300px;
+    width: 100%;
+}
+
+.nav{
+    background-color: black;
+    color: white;
+    height: 85px;
+    padding-top: 20px;
+    padding-inline: 30px;
+    font-size: 2em;
+    display:flex;
+    justify-content: space-between;
+
+}
+nav h3{
+    text-transform: uppercase;
+}
+.link{
+    display: flex;
+    gap: 10px;
+    list-style: none;
+    font-size: 20px;
+    padding-top: 10px;
+    
+   
+}
+header a{
+    color: white;
+}
+a{
+     text-decoration: none;
+}
+span{
+    color: #eb4800 ;
+
+}
+
+.new{
+    text-align: center;
+    height: calc(100vh - 85px);
+    color: white;
+    /* background: linear-gradient(rgba(0, 0, 0, 0.7 ),rgba(0,0, 0, 0.7)),url(../images/shopper.jpg);
+    background-position: center;
+    background-size: cover; */
+    /* background-attachment: fixed; */
+    position: relative;
+}
+.hero{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+}
+.hero a{
+    display: inline-flex;
+    background-color:  #eb4800;
+    font-size: 1.3em;
+    padding: 13px 30px;
+    border-radius: 3%;
+    margin-block: 30px;
+}
+.hero a:hover {
+    /* display: inline-flex; */
+    background-color:  rgb(154, 42, 42);
+    /* font-size: 1.3em;
+    padding: 13px 30px;
+    border-radius: 3%;
+    margin-block: 30px; */
+}
+.hero span{
+    font-size: 1.7em;
+    text-align: center;
+}
+.hero p{
+font-size: 1.2em;
+}
+.hero h1{
+    font-size: 4em;
+    padding-block: 10px;
+}
+.latest{
+    display: flex;
+    justify-content: space-between;
+    padding-top: 50px;
+    padding-bottom: 10px;
+    padding-inline: 5px;
+}
+.latest a{
+    color: #eb4800;
+}
+.latest h3{
+    font-size: 1.7em;
+}
+.empty{
+    background-color: rgb(166, 161, 161);
+    height: 1px;
+    margin-bottom: 50px;
+}
+.card-container1{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    padding-inline: 20px;
+}
+.card-container2{
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    padding-inline: 20px;
+}
+.card{
+    background-color: whitesmoke;
+    margin: 5px auto;
+    margin-inline: 15px;
+    margin-block: 20px;
+    border-radius: 3%;
+    border: none;
+    padding: 3px;
+    transition: all .5s ease;
+}
+.card:hover{
+    transform: scale(1.1);
+    border: none;
+    } 
+img{
+    height: 200px;
+    width: 100%;
+    display: block;
+}
+.inner{
+    background-color:white;
+    padding-block: 10px; 
+}
+.inner a{
+    color: #eb4800;
+}
+.inner p{
+    padding-top: none;
+}
+.class{
+    display: flex;
+    justify-content: space-between;
+    padding-inline: 10px;
+    padding-block: 15px;
+}
+.class h4{
+    color: gray;
+}
+.card p{
+    padding-left: 10px;
+    padding-block: 10px;
+    padding-right: 20px;
+}
+
+.inner h4{
+    font-size: 1.3em;
+}
+.inner h5{
+   font-size: 1.3em;
+}
+.inner a{
+    display: flex;
+    font-size: 1.1rem;
+    padding-top: 10px;
+    padding-left: 10px;
+}
+.Reviews{
+    color: #eb4800;
+    display: flex;
+    justify-content: space-between;
+}
+.Reviews ul{
+    display: flex;
+    font-size: 1.4rem;
+    list-style: none;
+    padding-left: 15px;
+}
+.continues{
+    background-color: rgb(68, 65, 65);
+    color: black;
+    padding: 5px;
+    padding-left: 30px;
+    padding-bottom: 150px;
+    margin-top: 50px;
+}
+footer{
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding-block: 15px;
+}
+/* product prject css */
+.span{
+    display: flex;
+    background-color: #eb4800;
+    font-size: 1.2rem;
+    padding-block: 10px;
+    padding-left: 25px;
+    letter-spacing: 3px;
+}
+.span span{
+    color: white;
+}
+.span a{
+    text-decoration: underline;
+}
+.hero h6{
+    font-size: 3rem;
+}
+.flash{
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    background-color: white;
+    padding-top: 80px;
+    padding-bottom: 10px;
+}
+.flash a{
+    color: #eb4800;
+}
+.table{
+    display: flex;
+justify-content: center;
+/* gap: 30px; */
+padding-block: 45px;
+}
+.table a{
+    color: black;
+}
+.table .th{
+    background-color: red;
+}
+.table th{
+    background-color: white;
+    padding: 8px 16px;
+    border: 1px solid black;
+}
+
+
+
+/* @media screen  */
+@media screen and (min-width: 650px) {
+    .new{
+        background: linear-gradient(rgba(0, 0, 0, 0.7 ),rgba(0,0, 0, 0.7)),url(../images/shopper.jpg);
+     background-repeat: no-repeat;
+     background-size: cover;
+     background-position: center;
+     background-attachment: fixed;
+    }
+}
+@media screen and (max-width: 650px) {
+    body{
+        background-color: rgb(57, 55, 55);
+    }
+    .new h1{
+color: blue;
+    }
+    .new p{
+        color: blue;
+    }
+    .nav h3{
+        font-size: 1.5rem;
+    }
+}
+@media screen and (max-width: 950px) {
+
+    .card-container1{
+        display: grid;
+        grid-template-columns: auto  auto;
+    }
+   
+}
+@media screen and (max-width: 950px) {
+     .card-container2{
+        display: grid;
+        grid-template-columns: auto auto auto ;
+    }
+}
+
+@media screen and (max-width: 750px) {
+    .card-container1{
+        display: grid;
+        grid-template-columns: auto;
+    }
+   
+}
+@media screen and (max-width: 750px) {
+     .card-container2{
+        display: grid;
+        grid-template-columns: auto auto;
+    }
+}
+@media screen and (max-width: 650px) { .card-container2{
+        display: grid;
+        grid-template-columns:  auto;
+    }
+}
